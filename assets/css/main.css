@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Karla", sans-serif;
+  background-color: #f0f7fa;
+  
+}
+
+.avatar {
+  height: 270px;
+}
+
+.navbar {
+  /* padding: 1.3rem; */
+  font-size: 1.3rem;
+  background-color: #f0f7fa;
+  line-height: 1.25;
+  font-family: "karla", sans-serif;
+  font-weight: 400;
+}
+
+.nav-item {
+  padding: 0.5rem;
+}
+
+.nav-link {
+  padding: 1.2rem;
+  font-weight: 400;
+}
+
+.about-me {
+  font-size: 1.4em;
+}
+
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.personal-section img {
+  display: block;
+}
+
+.personal-section p {
+  font-size: 1.63em;
+  width: 80%;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  font-family: serif;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: red;
+}
+
+.avatar__name {
+  font-family: "Lora", serif;
+  font-size: 1.75rem;
+  color: black;
+}
+.avatar__about {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.icons {
+  font-size: 2rem;
+}
+.carousel-item {
+  height: 300px;
+}
+.work__section_heading {
+  font-family: "Lora", serif;
+}
+.ul-interests {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+.ul-edu {
+  font-size: 0.9rem;
+  margin-left: 3rem;
+}
+ul.ul-edu li .description p.course {
+  font-size: 1.2rem;
+}
+
+/* .section-heading p {
+  font-weight: 400;
+  font-size: 1.1rem;
+} */
+.card-grid {
+  display: flex;
+}
+.article__title p {
+  font-size: 1.1rem;
+  align-items: justify;
+  color: #172a3a;
+}
+.article__title a {
+  font-family: "Lora", serif;
+  color: #172a3a;
+}
+.article__title ._footer {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.54);
+}
+._card-heading {
+  color: #172a3a;
+  font-size: 1.6rem;
+}
+.powered-by i {
+  color: black;
+}
+.change_color {
+  color: black;
+}
+.about {
+  margin-top: 10rem;
+}
+.see-all {
+  font-size: 1.3rem;
+  margin-top: 5rem;
+  /* font-family: "Karla", sans-serif; */
+  text-transform: uppercase;
+}
+.see-all_font {
+  font-family: "Karla", sans-serif;
+
+}
