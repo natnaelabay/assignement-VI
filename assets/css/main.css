@@ -7,13 +7,40 @@ body,
 html {
   font-family: "Karla", sans-serif;
   background-color: #f0f7fa;
-  
+  line-height: 1.5;
+  /* width: 76%; */
+  margin: 0 auto;
+  overflow-x: hidden;
 }
-
+.fonts {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.btn {
+  border: 0px;
+  padding: 7px 13px;
+}
 .avatar {
   height: 270px;
 }
-
+.blog-info {
+  width: 60%;
+  line-height: 1.8;
+}
+.date {
+  font-weight: 200;
+}
+.date {
+  font-weight: 200;
+  font-size: 14px;
+  color: #a89c87;
+}
+.blog-text {
+  overflow: hidden;
+  font-size: 1rem;
+}
 .navbar {
   /* padding: 1.3rem; */
   font-size: 1.3rem;
@@ -23,14 +50,14 @@ html {
   font-weight: 400;
 }
 
-.nav-item {
+/* .nav-item {
   padding: 0.5rem;
 }
 
 .nav-link {
   padding: 1.2rem;
   font-weight: 400;
-}
+} */
 
 .about-me {
   font-size: 1.4em;
@@ -57,6 +84,12 @@ html {
 .nav-link:hover {
   background-color: red;
 }
+.about-me {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.54);
+}
 
 .avatar__name {
   font-family: "Lora", serif;
@@ -66,7 +99,7 @@ html {
 .avatar__about {
   font-family: "Lora", serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .icons {
   font-size: 2rem;
@@ -105,6 +138,7 @@ ul.ul-edu li .description p.course {
 .article__title a {
   font-family: "Lora", serif;
   color: #172a3a;
+  font-size: 0.82em;
 }
 .article__title ._footer {
   font-size: 14px;
@@ -122,9 +156,11 @@ ul.ul-edu li .description p.course {
   color: black;
 }
 .about {
-  margin-top: 10rem;
+  margin-top: 5em;
 }
 .see-all {
+  color: #172a3a;
+
   font-size: 1.3rem;
   margin-top: 5rem;
   /* font-family: "Karla", sans-serif; */
@@ -132,5 +168,223 @@ ul.ul-edu li .description p.course {
 }
 .see-all_font {
   font-family: "Karla", sans-serif;
+  color: #172a3a;
+}
+.site-footer {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
 
+.about {
+  padding: 50px 0;
+}
+
+.avatar__img {
+  width: 270px;
+  height: 270px;
+  margin: 0 auto;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.blog-wrapper {
+  text-align: center;
+  margin-top: 7rem;
+  font-family: "lora", serif;
+
+  text-transform: capitalize;
+}
+.bottom-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  height: 125%;
+}
+.card-title a {
+  font-family: "lora", serif;
+  color: #172a3a;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+}
+.card:hover {
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+  transition: all 0.4s;
+}
+.card-text {
+  font-weight: 400;
+  color: #bbbbbb;
+  /* font-st: ; */
+}
+.carousel-img {
+  background: rgba(0, 0, 0, 1);
+}
+
+.column .card {
+  margin-top: 20px;
+}
+.hover-overlay {
+  position: relative;
+}
+img::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0%;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  z-index: 10;
+}
+img {
+  cursor: pointer;
+}
+img:hover::after {
+  width: 400%;
+}
+.hero {
+  /* background-color: #f0f7fa; */
+  margin-top: 60px;
+  width: 100%;
+}
+.dot {
+  background-color: #06805e !important;
+}
+.dot-2 {
+  background-color: none;
+}
+.border-right {
+  border-right: 1px solid #010203 !important;
+
+  border-color: #06805e !important;
+}
+.footer-wrapper {
+  margin-top: 100px;
+  background-color: inherit;
+}
+.exp-wrapper {
+  text-align: center;
+  /* margin-top: 7rem; */
+  font-family: "lora", serif;
+  text-transform: capitalize;
+}
+.time-col {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-title {
+  font-family: "lora", serif;
+  /* color: #172a3a; */
+  color: #8d8d8d;
+  font-size: 1.3rem;
+  font-weight: 700;
+  /* margin-bottom: ; */
+  line-height: 1.5;
+}
+.card {
+  border-radius: 0.25rem;
+}
+.text {
+  font-weight: 500;
+  line-height: 1.5;
+}
+.card-hover:hover {
+  box-shadow: 4px 10px 20px 11px rgba(0, 0, 0, 0.2);
+}
+.card-hover {
+  margin-bottom: 15px;
+  transition: all 0.4s;
+}
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+.project-row {
+  display: grid;
+  grid-template-areas: "a b c";
+  /* justify-content: space-evenly; */
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -60px;
+}
+.carousel-indicators .active {
+  background-color: #00000080;
+}
+#carouselExampleCaptions {
+  background-color: black;
+}
+.colored {
+  background-color: #06805e80;
+}
+.carousel-inner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(220, 66, 37, 0.5)),
+    color-stop(100%, rgba(0, 47, 75, 0.5))
+  ); /* Chrome,Safari4+ */
+}
+
+@media only screen and (max-width: 1040px) {
+  .project-row {
+    grid-template-areas:
+      "a "
+      "b "
+      "c  ";
+    justify-content: space-around;
+    /* display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* justify-content: space-evenly; */
+  }
+}
+.carousel-caption {
+  left: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 50%;
+  font-weight: 500;
+  transform: translateY(-50%);
+  text-align: left;
+  max-width: 900px;
+  /* left: auto; */
+  padding: 5px;
+}
+.carousel-inner img {
+  background: linear-gradient(
+    90deg,
+    rgba(84, 83, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(186, 186, 232, 1) 100%
+  );
+}
+
+.form-control:focus {
+  border-color: #06805e;
+  box-shadow: 0 0 0 0.2rem #08b182;
+}
+.form-control{
+  font-family: "karla", sans-serif;
+  font-weight: 500;
 }
