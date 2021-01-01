@@ -81,8 +81,29 @@ html {
   text-align: center;
 }
 
-.nav-link:hover {
+.nav-link{
+  position: relative;
+  margin: 0 3px;
+}
+/* .nav-link:hover {
   background-color: red;
+} */
+.nav-link::after{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  height: 5%;
+  width: 0;
+  transform: translateX(-50%);
+  background-color: black;
+  transition: all .3s;
+}
+.nav-link:hover::after{
+  /* transform:  scaleX(8); */
+  width: 100%;
+  transition: all .3s;
+
 }
 .about-me {
   font-size: 1.3rem;
