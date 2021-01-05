@@ -26,7 +26,7 @@ html {
   height: 270px;
 }
 .blog-info {
-  width: 60%;
+  /* width: 60%; */
   line-height: 1.8;
 }
 .date {
@@ -39,7 +39,6 @@ html {
 }
 .blog-text {
   overflow: hidden;
-  font-size: 1rem;
 }
 .navbar {
   /* padding: 1.3rem; */
@@ -48,6 +47,11 @@ html {
   line-height: 1.25;
   font-family: "karla", sans-serif;
   font-weight: 400;
+}
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
 }
 
 /* .nav-item {
@@ -81,29 +85,28 @@ html {
   text-align: center;
 }
 
-.nav-link{
+.nav-link {
   position: relative;
-  margin: 0 3px;
+  margin: 0 5px;
 }
 /* .nav-link:hover {
   background-color: red;
 } */
-.nav-link::after{
+.nav-link::after {
   position: absolute;
   bottom: 0;
   left: 50%;
   content: "";
-  height: 5%;
+  height: 3%;
   width: 0;
   transform: translateX(-50%);
   background-color: black;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.nav-link:hover::after{
+.nav-link:hover::after {
   /* transform:  scaleX(8); */
   width: 100%;
-  transition: all .3s;
-
+  transition: all 0.3s;
 }
 .about-me {
   font-size: 1.3rem;
@@ -151,21 +154,7 @@ ul.ul-edu li .description p.course {
 .card-grid {
   display: flex;
 }
-.article__title p {
-  font-size: 1.1rem;
-  align-items: justify;
-  color: #172a3a;
-}
-.article__title a {
-  font-family: "Lora", serif;
-  color: #172a3a;
-  font-size: 0.82em;
-}
-.article__title ._footer {
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  color: rgba(0, 0, 0, 0.54);
-}
+
 ._card-heading {
   color: #172a3a;
   font-size: 1.6rem;
@@ -176,9 +165,9 @@ ul.ul-edu li .description p.course {
 .change_color {
   color: black;
 }
-.about {
-  margin-top: 5em;
-}
+/* .about {
+  margin-top: 2em;
+} */
 .see-all {
   color: #172a3a;
 
@@ -350,6 +339,11 @@ img:hover::after {
 .colored {
   background-color: #06805e80;
 }
+
+.article__title a:hover {
+  color: #555151;
+  text-decoration: none;
+}
 .carousel-inner:after {
   content: "";
   position: absolute;
@@ -400,12 +394,138 @@ img:hover::after {
     rgba(186, 186, 232, 1) 100%
   );
 }
+.wrapper {
+  position: relative;
+}
 
+.hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity .3s;
+  align-items: center;
+  transform: translateX(-50%) translateY(-50%);
+}
+.hover h1 {
+  position: absolute;
+  top: 50%;
+  color: rgb(221, 216, 216);
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.wrapper:hover .hover {
+  opacity: .7;
+  cursor: pointer;
+}
+/* .wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.wrapper:hover .image {
+  opacity: 0.3;
+}
+
+.wrapper:hover .middle {
+  opacity: 1;
+} */
 .form-control:focus {
   border-color: #06805e;
   box-shadow: 0 0 0 0.2rem #08b182;
 }
-.form-control{
+.form-control {
   font-family: "karla", sans-serif;
   font-weight: 500;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.article__title p {
+  /* font-size: 1.1rem; */
+  /* align-items: justify; */
+  color: #172a3a;
+}
+.article__title a {
+  font-family: "Lora", serif;
+  color: #172a3a;
+  font-size: 0.82em;
+  transition: color 0.3s;
+}
+.article__title ._footer {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.54);
+}
+.blog-text {
+  overflow: auto;
+}
+.img-shaddow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
+.v-center {
+  display: flex;
+  align-items: center;
+}
+.blog-img {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .article__title a {
+    font-size: 0.7em;
+  }
+  .article__title ._footer {
+    font-size: 12px;
+  }
+  .article__title p {
+    font-size: 0.9em;
+  }
+  .blog-img {
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .article__title a {
+    font-size: 0.6em;
+  }
+  .article__title ._footer {
+    font-size: 8px;
+  }
+  .article__title p {
+    font-size: 0.8em;
+  }
+  .blog-img {
+    height: 50px;
+  }
 }
